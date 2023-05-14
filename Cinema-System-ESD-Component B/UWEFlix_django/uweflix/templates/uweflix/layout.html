@@ -12,6 +12,8 @@
     <script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-latest.js"></script> 
     <script type="text/javascript" src="{{ STATIC_URL }} https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="{{ STATIC_URL }} /static/js/rango-jquery.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="{% static 'main.js' %}"></script>
 </head>
 
 <body>
@@ -38,7 +40,7 @@
                     <a class="nav-link" href="{% url 'add_film' %}">Manage Films</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'add_screen' %}">Add Screen</a>
+                    <a class="nav-link" href="{% url 'add_screen' %}">Manage Screens</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="{% url 'add_showing' %}">Add Showing</a>
@@ -47,7 +49,7 @@
                     <a class="nav-link" href="{% url 'change_ticket_prices' %}">Change Ticket Prices</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'add_club' %}">Add Club</a>
+                    <a class="nav-link" href="{% url 'add_club' %}">Manage Clubs</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="{% url 'add_rep' %}">Add Club Rep</a>
